@@ -47,16 +47,18 @@ public class Principal {
                 break;
 
             case 3:
+                sc.nextLine();
                 System.out.print("\nIngrese el rango policial\n> ");
                 String rang = sc.nextLine();
                 Policia police = new Policia(nombre, apellido, edad, rang);
-                System.out.println("");
+                System.out.println(police);
                 break;
 
             default:
                 System.out.println("Opcion fuera del rango(1-3)");
 
         }
+        /*
         Estudiante e = new Estudiante("René", "Elizalde", 33, 100.2);
         System.out.println(e);
         // Un docente hereda de una Persona y adicionalmente tiene 
@@ -72,6 +74,7 @@ public class Principal {
         Policia p = new Policia("ALEX", "MENDOZA", 35, "Cabo"); // falta implementar
         System.out.println(p);
 
+         */
     }
 
 }
